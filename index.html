@@ -13,10 +13,13 @@
     <style>
 
         body {
-            background-color: #000000;
 
-            color: #a9a9a9;            font-family: 'Courier New', Courier, monospace
-;
+            background-color: #000000;
+                                                             /* EN SERIO TE LO JURO QUE AUN NO ACABO */
+
+            color: #a9a9a9;
+            font-family: 'Courier New', Courier, monospace;
+
             padding: 60px 20px;
 
             text-align: center;
@@ -25,82 +28,72 @@
 
             flex-direction: column;
 
-            align-items: center;        }
+            align-items: center;
+
+        }
 
         h1 {
 
             color: #ffe4c4;
+
             font-size: 2.2rem;
 
             margin-bottom: 10px;
+
+        }
+
+        .maintenance-box {
+
+            margin: 40px auto 0px auto;
+
+            padding: 25px;
+
+            border: 2px solid #696969;
+            max-width: 600px;
+
+            background-color: #0d0d0d;
+
+        }
+
+        .alert-line {
+
+            color: #ffffff;
+
+            font-weight: bold;
 
             text-transform: uppercase;
 
         }
 
-        .status-box {
 
-            margin: 40px auto;
-
-            padding: 25px;
-
-            border: 1px dashed #696969;
-            max-width: 600px;
-
-            background-color: #0a0a0a;
-
-        }
-        .code-line {
-
-            color: #ffffff;
-
-            font-weight: bold;
-
-        }
-
-
-        
-                                                                     /* --- ENSERIO TE JURO QUE AUN NO LA ACABO --- */
-
-
-        .mascota-img {
-
-            margin-top: 50px;
-
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-            opacity: 0.8;
-        }
-
-
-        .back-link {
+              .mascota-btn-link {
 
             display: inline-block;
 
-            margin-top: 40px;
+            margin-top: -550px;
 
-            color: #ffffff;
+            transition: transform 0.2s ease, filter 0.2s ease;
 
-            text-decoration: none;
-
-            font-weight: bold;
-
-            border-bottom: 1px solid #ffffff;
-
-            padding-bottom: 2px;
-
-            transition: all 0.3s ease;
+            cursor: pointer;
 
         }
 
-        .back-link:hover {
+       
 
-            color: #ffe4c4;
+        .mascota-btn-link:hover {
 
-            border-color: #ffe4c4;
+            transform: scale(1.02);
+            filter: brightness(1.2);
+        }
 
-            cursor: pointer;
+        .mascota-img {
+
+            width: 100%;
+
+            max-width: 1400px;
+            height: auto;
+
+            border-radius: 8px;
 
         }
 
@@ -123,11 +116,12 @@
 
     </div>
 
+    
+    <a href="https://maxmayen.github.io/Directorio/" class="mascota-btn-link" title="Haz clic en la mascota para regresar al menu principal">
 
-    <img src="index.png" alt="Mascota del Proyecto en Construcción" class="mascota-img">
+        <img src="index.png" alt="Mascota en Creacion - Boton de Regreso" class="mascota-img">
 
-
-    <a href="https://maxmayen.github.io/Directorio/" class="back-link">&lt; Regresar al Menu Principal</a>
+    </a>
 
 
 </body>
