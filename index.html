@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codigo en Proceso</title>
-    <style>
-       
+   <style>
+   
         *, *::before, *::after {
             box-sizing: border-box;
         }
@@ -21,9 +21,10 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            justify-content: flex-start;
         }
 
-                                                                /* EN SERIO TE LO JURO QUE AUN NO ACABO */
+                                                                     /* EN SERIO TE LO JURO QUE AUN NO ACABO */
 
         h1 {
             color: #ffe4c4;
@@ -50,23 +51,27 @@
         }
 
         .mascota-btn-link {
-            display: inline-block;
-            margin-top: 20px;
+            display: block;
+            margin: 10px auto 0 auto;
             width: 100%;
-            max-width: 800px; 
+            max-width: 500px;
+            max-height: 350px;
+            overflow: hidden;
             transition: transform 0.2s ease, filter 0.2s ease;
             cursor: pointer;
         }
 
         .mascota-btn-link:hover {
-            transform: scale(1.02);
+            transform: scale(1.05);
             filter: brightness(1.2);
         }
 
         .mascota-img {
             width: 100%;
             height: auto;
+            object-fit: contain;
             border-radius: 8px;
+            display: block;
         }
 
         @media (max-width: 480px) {
@@ -88,8 +93,8 @@
             }
 
             .mascota-btn-link {
-                margin-top: 10px;
-                max-width: 100%; 
+                max-width: 80%;
+                max-height: 250px;
             }
         }
     </style>
