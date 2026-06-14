@@ -1,129 +1,112 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Codigo en Proceso</title>
-
     <style>
+       
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
 
         body {
-
             background-color: #000000;
-                                                             /* EN SERIO TE LO JURO QUE AUN NO ACABO */
-
             color: #a9a9a9;
             font-family: 'Courier New', Courier, monospace;
-
-            padding: 60px 20px;
-
+            padding: 40px 20px;
             text-align: center;
-
             display: flex;
-
             flex-direction: column;
-
             align-items: center;
-
+            min-height: 100vh;
+            margin: 0;
         }
+
+                                                                /* EN SERIO TE LO JURO QUE AUN NO ACABO */
 
         h1 {
-
             color: #ffe4c4;
-
             font-size: 2.2rem;
-
             margin-bottom: 10px;
-
-        }
-
-        .maintenance-box {
-
-            margin: 40px auto 0px auto;
-
-            padding: 25px;
-
-            border: 2px solid #696969;
+            margin-top: 0;
+            width: 100%;
             max-width: 600px;
+        }
 
+        .status-box {
+            margin: 20px auto;
+            padding: 25px;
+            border: 2px solid #696969;
+            width: 100%;
+            max-width: 600px;
             background-color: #0d0d0d;
-
         }
 
-        .alert-line {
-
+        .code-line {
             color: #ffffff;
-
             font-weight: bold;
-
             text-transform: uppercase;
-
         }
 
-
-              .mascota-btn-link {
-
+        .mascota-btn-link {
             display: inline-block;
-
-            margin-top: -550px;
-
+            margin-top: 20px;
+            width: 100%;
+            max-width: 800px; 
             transition: transform 0.2s ease, filter 0.2s ease;
-
             cursor: pointer;
-
         }
-
-       
 
         .mascota-btn-link:hover {
-
             transform: scale(1.02);
             filter: brightness(1.2);
         }
 
         .mascota-img {
-
             width: 100%;
-
-            max-width: 1400px;
             height: auto;
-
             border-radius: 8px;
-
         }
 
+        @media (max-width: 480px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            h1 {
+                font-size: 1.6rem; 
+            }
+
+            .status-box {
+                padding: 15px;
+                margin: 15px auto;
+            }
+
+            .status-box p {
+                font-size: 0.9rem; 
+            }
+
+            .mascota-btn-link {
+                margin-top: 10px;
+                max-width: 100%; 
+            }
+        }
     </style>
-
 </head>
-
 <body>
-
 
     <h1>PROYECTO EN DESARROLLO</h1>
 
-    
     <div class="status-box">
-
         <p class="code-line">> status: SIGUE PENDIENTE...</p>
         <p>Seguimos trabajando fuertemente en esta pagina.</p>
-
         <p>Vuelve pronto para ver el acordeon de sintaxis completo</p>
-
     </div>
 
-    
     <a href="https://maxmayen.github.io/Directorio/" class="mascota-btn-link" title="Haz clic en la mascota para regresar al menu principal">
-
         <img src="index.png" alt="Mascota en Creacion - Boton de Regreso" class="mascota-img">
-
     </a>
 
-
 </body>
-
 </html>
