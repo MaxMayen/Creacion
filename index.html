@@ -22,6 +22,7 @@
             min-height: 100vh;
             margin: 0;
             justify-content: flex-start;
+            overflow-x: hidden; 
         }
 
                                                                      /* EN SERIO TE LO JURO QUE AUN NO ACABO */
@@ -42,6 +43,8 @@
             width: 100%;
             max-width: 600px;
             background-color: #0d0d0d;
+            position: relative;
+            z-index: 5;
         }
 
         .code-line {
@@ -52,25 +55,24 @@
 
         .mascota-btn-link {
             display: block;
-            margin: 10px auto 0 auto;
             width: 100%;
-            max-width: 500px;
-            max-height: 350px;
-            overflow: hidden;
+            max-width: 500px; 
+            margin: 0 auto;
+            transform: translateY(-25%); 
             transition: transform 0.2s ease, filter 0.2s ease;
             cursor: pointer;
+            position: relative;
+            z-index: 1;
         }
 
         .mascota-btn-link:hover {
-            transform: scale(1.05);
+            transform: translateY(-25%) scale(1.05);
             filter: brightness(1.2);
         }
 
         .mascota-img {
             width: 100%;
             height: auto;
-            object-fit: contain;
-            border-radius: 8px;
             display: block;
         }
 
@@ -94,7 +96,11 @@
 
             .mascota-btn-link {
                 max-width: 80%;
-                max-height: 250px;
+                transform: translateY(-10%);
+            }
+
+            .mascota-btn-link:hover {
+                transform: translateY(-10%) scale(1.05);
             }
         }
     </style>
